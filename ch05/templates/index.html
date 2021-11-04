@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <title>dht11 sensor</title>
+</head>
+<body>
+    <div class="btns">
+        <button id="timedht" >now</button>
+        <button id="record">record</button>
+    </div>
+    <div>
+        <table border="1">
+            <thead>
+                <tr>
+                    <th>No.</th>
+                    <th>date</th>
+                    <th>time</th>
+                    <th>temperature(*C)</th>
+                    <th>humidity(%)</th>
+                </tr>
+            </thead>
+            <tbody id="table">
+
+            </tbody>
+        </table>
+    </div>
+    <script src="{{url_for('static', filename='index.js')}}"></script>
+</body>
+</html>

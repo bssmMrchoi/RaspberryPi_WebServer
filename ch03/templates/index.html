@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8"> 
+		<link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+		<title> IoT Led </title>
+	</head>
+	<body>		
+		<div class="container">
+			<div class="header">
+				<h2>LED on off</h2>
+			</div>
+			<div class="main">
+				<button id=ledOn>LED ON</button>
+				<button id=ledOff>LED OFF</button>
+			</div>
+			<div class="result">
+			</div>
+		</div>
+		<script src="{{url_for('static', filename='index.js')}}"></script>
+	</body>
+</html>
